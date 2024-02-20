@@ -1,0 +1,67 @@
+
+  .product-images{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: rgb(50, 51, 51);
+  }
+  .product-info {
+    width: 210px;
+    /* padding: 10px; */
+    border-radius: 10px;
+  }
+  .thumbnail{
+    height: 180px;
+    width: 230px;
+    padding: 18px;
+  }
+  
+  .product-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .long-title {
+    font-size: 16px; /* Decrease font size for long titles */
+  }
+  .s-description {
+    margin-bottom: 5px;
+    font-size: 12px;
+    padding: 5px;
+    height: 70px;
+  }
+  .scrollable-description {
+    max-height: 70px; /* Set the maximum height for the description */
+    overflow-y: auto; /* Enable vertical scrolling */
+    /* background-color: gold; */
+  }
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .product-rating {
+    margin-bottom: 5px;
+  }
+  
+  .product-stock {
+    margin-bottom: 5px;
+  }
+  
+  .product-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add styles for the Card component if needed */
+  

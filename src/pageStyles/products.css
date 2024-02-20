@@ -1,0 +1,16 @@
+/* products.css */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .product-card {
+    width: 250px;
+    height: 450px;
+  
+  }
+.product-category{
+  text-align: center;
+  padding:10px;
+   border-radius: 5px;
+}
