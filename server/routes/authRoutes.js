@@ -15,4 +15,8 @@ router.post('/logout', Logout);
 router.get('/',authenticateUser, (req, res)=>{
     res.json({message:"user authenticated successfully"})
 } );
+router.get('https://swiftshopper-mern.vercel.app/login',(req,res)=>{
+    const { id } = req.body;
+    res.json({message:'backend setup working', data:`id: ${id}`})
+})
 module.exports = router;
