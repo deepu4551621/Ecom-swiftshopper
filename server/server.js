@@ -1,6 +1,5 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const User = require('./Modal/user');
 const dotenv = require('dotenv');
 dotenv.config();
 const authRoutes = require('./routes/authRoutes');
@@ -20,9 +19,9 @@ mongoose.connect(DB)
   .then(() => {
     console.log('Database is connected');
     // Start the server
-    app.listen(PORT, () => {
-      console.log(`Server is listening on port ${PORT}`);
-    });
+    // app.listen(PORT, () => {
+    //   console.log(`Server is listening on port ${PORT}`);
+    // });
   })
   .catch(err => console.error('Database connection error:', err));
 

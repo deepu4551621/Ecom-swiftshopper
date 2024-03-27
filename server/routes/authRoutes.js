@@ -5,6 +5,7 @@ const  {Login, Logout}  = require('./controlers/authController')
 const authenticateUser  = require('../middlewares/authMiddleware')
 const allowOrigins=['https://swiftshopper-b78ae.web.app',
 'http://localhost:3000',
+'https://swiftshopper-mern.vercel.app/',
 'https://swiftshopper-b78ae.firebaseapp.com' ]
 router.use(cors({
     origin: allowOrigins,
