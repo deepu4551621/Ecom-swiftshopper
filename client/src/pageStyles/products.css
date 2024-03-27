@@ -1,0 +1,33 @@
+/* products.css */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .product-card {
+    width: calc(37.33% - 20px);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  
+  }
+.product-category{
+  text-align: center;
+   border-radius: 5px;
+}
+.pagination{
+  justify-content: center;
+  background-color: rgb(247, 243, 243);
+ padding: 10px;
+}
+@media (max-width:640px) {
+  .product-card{
+    width: calc(48.33% - 20px);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+}
+@media (min-width:765px) {
+ .product-card{
+  width: 200px;
+ } 
+}

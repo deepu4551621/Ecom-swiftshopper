@@ -1,0 +1,16 @@
+1.items are added to cart now only need to show on cart section
+2 add delete feature
+3 update feature
+4 reconstruct login system using cookie 
+
+//22/2024
+fix navbar done
+
+23/24
+add logout feature done
+
+26/2024
+add total price and checkout logic
+and also add wishlist ui
+#npm
+-> react-hot-toast

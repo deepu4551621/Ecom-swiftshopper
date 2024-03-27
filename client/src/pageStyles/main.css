@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    /* max-width: 1200px; */
+    width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+  }
+  .sidebar {
+    flex: 1;
+    width: 100%;
+    background-color: #ffffff;
+    /* padding: 20px; */
+  }
+  
+  .mainbar {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .product-card {
+    width: 250px;
+  }
+  .ul-slider{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+  }
+  .categories{
+    text-align:center;
+    border-bottom: 4px solid grey
+  }
+ .linkContainer{
+  background-color:#f0f0f0;
+  padding:10px;
+  margin:10px;
+text-align:center;
+border-radius:10px;
+ }
+ .linkAnchor{
+  text-decoration: none;
+ }
+ @media (max-width:650px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  /* .categories{
+    font-size: 1rem;
+  } */
+  .sidebar{
+    overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap;
+  }
+  .ul-slider{
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: inline-flex; 
+  }
+  .ul-slider a{
+    display: block; /* Ensure links fill the entire list item */
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #f0f0f0; /* Example background color */
+    text-decoration: none; /* Remove underline */
+  }
+ }
