@@ -11,17 +11,14 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.use('/', authRoutes);
-
-
+// app.use('/', authRoutes);
+app.get('https://ecom-swiftshopper-server.vercel.app/',(r,res)=>{
+  r.json({data:'vercel server is running'})
+})
 // Connect to MongoDB
 mongoose.connect(DB)
   .then(() => {
     console.log('Database is connected');
-    // Start the server
-    // app.listen(PORT, () => {
-    //   console.log(`Server is listening on port ${PORT}`);
-    // });
   })
   .catch(err => console.error('Database connection error:', err));
 
@@ -30,4 +27,7 @@ app.use(express.json());
 
 // Routes
 
-
+  // Start the server
+    app.listen(PORT, () => {
+      console.log(`Server is listening on port ${PORT}`);
+    });
