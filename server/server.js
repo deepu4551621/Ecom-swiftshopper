@@ -11,10 +11,8 @@ const app = express();
 app.use(express.json());
 
 // Routes
-// app.use('/', authRoutes);
-app.get('https://ecom-swiftshopper-server.vercel.app/',(r,res)=>{
-  r.json({data:'vercel server is running'})
-})
+app.use('/', authRoutes);
+
 // Connect to MongoDB
 mongoose.connect(DB)
   .then(() => {
