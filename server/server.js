@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.use('/', authRoutes);
+// app.use('/', authRoutes);
 
 // Connect to MongoDB
 mongoose.connect(DB)
@@ -24,7 +24,9 @@ mongoose.connect(DB)
 app.use(express.json());
 
 // Routes
-
+app.get('/',(req,res)=>{
+  res.json({message:"backend server is running"});
+}
   // Start the server
     app.listen(PORT, () => {
       console.log(`Server is listening on port ${PORT}`);
